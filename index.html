@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="stylesheet" href="css/styles.css" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,21 +12,31 @@
       <div class="status-bar__column">
         <span>No service</span>
         <i class="fa-solid fa-wifi"></i>
-        </svg>
       </div>
-      <div class="status-bar__column"></div>
-      <span>18:43</span>
+      <div class="status-bar__column">
+        <span>18:43</span>
+      </div>
       <div class="status-bar__column">
         <span>110%</span>
-        <i class="fa-solid fa-battery-full"></i>
+        <i class="fa-solid fa-battery-full fa-lg"></i>
         <i class="fa-solid fa-bolt"></i>
       </div>
     </div>
 
     <header class="welcome-header">
-<h1 class="welcome-header__title">Welcome to Kokoa Clone</h1>
-<p class="welcome-header__text">If you have a Kokoa Account, log in with your email or phone number.</p>
+      <h1 class="welcome-header__title">Welcome to Kokoa Clone</h1>
+      <p class="welcome-header__text">
+        If you have a Kokoa Account, log in with your email or phone number.
+      </p>
     </header>
+
+    <form id="login-form">
+      <input type="text" placeholder="Eamil or phone number" />
+      <input type="password" placeholder="Password" />
+      <input type="submit" value="Log In" />
+      <input type="submit" value="Sign Up" />
+      <a href="#">Find KoKoa Account or Password</a>
+    </form>
     <script
       src="https://kit.fontawesome.com/55d7d4196f.js"
       crossorigin="anonymous"
@@ -38,4 +49,7 @@
 2. status-bar__column : __means adding 
 3. BEM : block element modifier (코딩 관습을 따르자)
 4. icon: https://heroicons.com/  &   https://heroicons.dev/  &  https://fontawesome.com/
+5. # <- go to the same page
+6. https://fonts.google.com/ <- font-family 모음집
+7. css hack: 
 -->
