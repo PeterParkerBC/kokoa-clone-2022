@@ -30,9 +30,14 @@
       </p>
     </header>
 
-    <form id="login-form">
-      <input type="text" placeholder="Eamil or phone number" />
-      <input type="password" placeholder="Password" />
+    <form action="friends.html" method="get" id="login-form">
+      <input
+        name="username"
+        required
+        type="text"
+        placeholder="Eamil or phone number"
+      />
+      <input name="password" required type="password" placeholder="Password" />
       <input type="submit" value="Log In" />
       <input type="submit" value="Sign Up" />
       <a href="#">Find KoKoa Account or Password</a>
@@ -66,4 +71,13 @@
 -> :root {--yellow: #FAE100} -> 루트(뿌리) {--노랑은: #FAE100}
 13. :not([속성]) -> input:not([type="submit"]) -> input중에서:X([type="submit"]) 빼고! 
 14. CSS작업 할때 맨 위부터 순서대로 Styling 작업
+15. form
+action="" <- where are you goging to send the data
+-> <form action="friends.html"
+method="" <- post , get 
+post -> sending information to the backend
+get -> insecure (보안 위험) NEVER SEND Personal Info ex. ID, PW
+-> ('get' reveals all the information I wrote in the form)
+-> "get" is very useful sometimes ex. google q=keywords (query)
+
 -->
